@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2743fe38834369c49bdd872e979e3a0c, type: 3}
+  m_Name: Pile of Acorns
+  m_EditorClassIdentifier: 
+  m_title: Pile of Acorns
+  m_description: Perfect for impatient gardeners.
+  m_image: {fileID: 21300000, guid: bf829dad0fe8e7d4b81fc82a093b1820, type: 3}
+  m_inInventory: 0
