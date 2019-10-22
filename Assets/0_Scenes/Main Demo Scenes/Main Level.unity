@@ -8211,7 +8211,7 @@ PrefabInstance:
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.674
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
@@ -8298,6 +8298,17 @@ PrefabInstance:
       propertyPath: EKey.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 412564135}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].sentenceText
+      value: For when nature doesn't call...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
     - target: {fileID: 3971807962316784775, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_IsTrigger
@@ -11709,7 +11720,7 @@ PrefabInstance:
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
@@ -18460,7 +18471,7 @@ PrefabInstance:
     - target: {fileID: 5331091505886203752, guid: 9a1f2a125d31613469cfbb3be07118e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5331091505886203752, guid: 9a1f2a125d31613469cfbb3be07118e5,
         type: 3}
