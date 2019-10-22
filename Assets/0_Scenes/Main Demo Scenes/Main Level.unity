@@ -9281,72 +9281,72 @@ PrefabInstance:
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.17
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.06
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.17
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.06
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.06
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.17
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.06
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 7315755884829406632, guid: 21291ce1d00656b4ab740950c9030b3b,
         type: 3}
@@ -9428,6 +9428,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21291ce1d00656b4ab740950c9030b3b, type: 3}
@@ -15882,7 +15897,7 @@ GameObject:
   - component: {fileID: 1440896868}
   m_Layer: 5
   m_Name: Real Safe Panel
-  m_TagString: Untagged
+  m_TagString: Safe Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23589,6 +23604,7 @@ MonoBehaviour:
   codeEnterUIText: {fileID: 1845200467}
   enterCodePopUp: {fileID: 676438089}
   insertKeyPopUp: {fileID: 576736523}
+  canType: 0
 --- !u!4 &2146147055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8013262215223692106, guid: 1288f58016a0d594f90d4f23982ed4cc,
