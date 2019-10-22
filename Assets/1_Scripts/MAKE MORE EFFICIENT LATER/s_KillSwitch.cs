@@ -10,6 +10,15 @@ public class s_KillSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape))
         {
             gameObject.SetActive(false);
+
+            // tyler i'm so sorry 10/22/19
+            if (this.tag == "Safe Panel")
+            {
+                this.transform.parent.GetComponent<s_Safe>().canType = false;
+                //this.GetComponent<s_Safe>().canType = false;
+            }
+
+            //else Debug.Log("bingbong");
         }
     }
 }
