@@ -136,7 +136,7 @@ public class s_MasterMH : MonoBehaviour
                 if (theItem.Equals("Laxative Bottle")) PourLaxatives();
                 break;
 
-            case "Wife's Nightstand":
+            case "Wife's Journal":
                 if (theItem.Equals("Polaroid Picture")) PlaceEvidence();
                 break;
 
