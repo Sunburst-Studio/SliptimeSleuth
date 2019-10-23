@@ -31,6 +31,69 @@ public class s_Safe : MonoBehaviour
     public GameObject enterCodePopUp;
     public GameObject insertKeyPopUp;
 
+    int keyboardInput;
+
+    public bool canType;
+
+    private void Update()
+    {
+        #region<Keyboard Input>
+        if(canType)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
+            {
+                AddNumber(1);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+            {
+                AddNumber(2);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+            {
+                AddNumber(3);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4))
+            {
+                AddNumber(4);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5))
+            {
+                AddNumber(5);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6))
+            {
+                AddNumber(6);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7))
+            {
+                AddNumber(7);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8))
+            {
+                AddNumber(8);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Keypad9))
+            {
+                AddNumber(9);
+            }
+        }
+        
+        #endregion
+
+        //if(gameObject.activeSelf == false)
+        //{
+        //    canType = false;
+        //}
+    }
+
     private void Start()
     {
         m_firstCode = 7;
@@ -38,6 +101,7 @@ public class s_Safe : MonoBehaviour
         m_thirdCode = 9;
         m_fourthCode = 4;
         //codeEnterUIText = codeEnterUI.GetComponent<Text>();
+        canType = false;
         ResetCode();
     }
 

@@ -9026,7 +9026,7 @@ PrefabInstance:
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.674
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
@@ -9113,6 +9113,17 @@ PrefabInstance:
       propertyPath: EKey.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 412564135}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].sentenceText
+      value: For when nature doesn't call...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
     - target: {fileID: 3971807962316784775, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_IsTrigger
@@ -10318,6 +10329,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006512736101293640, guid: 21291ce1d00656b4ab740950c9030b3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21291ce1d00656b4ab740950c9030b3b, type: 3}
@@ -12840,7 +12866,7 @@ PrefabInstance:
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
         type: 3}
@@ -17178,7 +17204,7 @@ GameObject:
   - component: {fileID: 1440896868}
   m_Layer: 5
   m_Name: Real Safe Panel
-  m_TagString: Untagged
+  m_TagString: Safe Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18424,6 +18450,36 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0e44309c32422a94c9cdd78b6c57c5f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8daa5d5206c70442a1ab791d6b5267b, type: 3}
+--- !u!1 &1535976170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535976171}
+  m_Layer: 0
+  m_Name: AAAAAAAAAAAAAAAAAAAa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535976171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535976170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.198858, y: 20.484838, z: 11.52474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537500621
 GameObject:
   m_ObjectHideFlags: 0
@@ -19625,7 +19681,7 @@ PrefabInstance:
     - target: {fileID: 5331091505886203752, guid: 9a1f2a125d31613469cfbb3be07118e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5331091505886203752, guid: 9a1f2a125d31613469cfbb3be07118e5,
         type: 3}
@@ -25221,6 +25277,7 @@ MonoBehaviour:
   codeEnterUIText: {fileID: 1845200467}
   enterCodePopUp: {fileID: 676438089}
   insertKeyPopUp: {fileID: 576736523}
+  canType: 0
 --- !u!4 &2146147055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8013262215223692106, guid: 1288f58016a0d594f90d4f23982ed4cc,
