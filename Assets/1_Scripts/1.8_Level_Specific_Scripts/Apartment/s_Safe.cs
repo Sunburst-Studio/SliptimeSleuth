@@ -110,19 +110,19 @@ public class s_Safe : MonoBehaviour
         if(m_firstEntry == -1)
         {
             m_firstEntry = entry;
-            codeEnterUIText.text = codeEnterUIText.text + entry;
+            codeEnterUIText.text = codeEnterUIText.text + entry + " ";
         }
 
         else if(m_secondEntry == -1)
         {
             m_secondEntry = entry;
-            codeEnterUIText.text = codeEnterUIText.text + entry;
+            codeEnterUIText.text = codeEnterUIText.text + entry + " ";
         }
 
         else if(m_thirdEntry == -1)
         {
             m_thirdEntry = entry;
-            codeEnterUIText.text = codeEnterUIText.text + entry;
+            codeEnterUIText.text = codeEnterUIText.text + entry + " ";
         }
 
         else if(m_fourthEntry == -1)
@@ -136,7 +136,7 @@ public class s_Safe : MonoBehaviour
                 Debug.Log("CORRECT CODE");
                 //correctUI.SetActive(false);
                 //correctUI.SetActive(true);
-                codeEnterUIText.text = "UNLOCKED";
+                //codeEnterUIText.text = "UNLOCKED";
                 codeEnterUIText.color = Color.green;
 
                 enterCodePopUp.SetActive(false);
