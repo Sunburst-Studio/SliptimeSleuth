@@ -59,7 +59,8 @@ public class s_Detector : s_DetectionHandler
         m_ISObj = this.transform.GetChild(1).gameObject;
         m_ISObj.GetComponent<TextMeshPro>().text = "?";
         m_ISObj.GetComponent<TextMeshPro>().color = Color.yellow;
-
+        m_ISObj.gameObject.SetActive(false);
+        m_ISObj.gameObject.SetActive(true);
         //m_mainCam = GameManager.instance.mainCamera;
 
         //m_ISObj.SetActive(true);
