@@ -108,6 +108,7 @@ public class s_MasterMH : MonoBehaviour
         GameObject m_realSafePanel;
 
         m_safePanel = FindObjectOfType<s_Safe>().gameObject;
+        m_safePanel.GetComponent<s_Safe>().canType = true;
         m_realSafePanel = m_safePanel.transform.GetChild(0).gameObject;
         m_realSafePanel.SetActive(true);
     }
@@ -136,7 +137,7 @@ public class s_MasterMH : MonoBehaviour
                 if (theItem.Equals("Laxative Bottle")) PourLaxatives();
                 break;
 
-            case "Wife's Nightstand":
+            case "Wife's Journal":
                 if (theItem.Equals("Polaroid Picture")) PlaceEvidence();
                 break;
 

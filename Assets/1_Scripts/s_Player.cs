@@ -56,6 +56,20 @@ public class s_Player : MonoBehaviour
 
     private void Update()
     {
+        // to give alternative exit for UI
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (m_notebookOpen)
+            {
+                NotebookHandler();
+            }
+
+            else if (m_inventoryUIOpen)
+            {
+                InventoryUIHandler();
+            }
+        }
+
         // if you want to open the notebook
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
@@ -147,10 +161,9 @@ public class s_Player : MonoBehaviour
             {
                 GameManager.instance.disableMovement = true;
                 m_inventoryUIOpen = true;
-
                 // "open" the inventory
                 inventoryUIAnimation.Play("a_Inventory_Open");
-
+                GameManager.instance.timeSlider.gameObject.SetActive(false);
                 //GameManager.instance.inventoryUI.SetActive(true);
             }
 
@@ -162,7 +175,7 @@ public class s_Player : MonoBehaviour
 
                 // "close" the inventory
                 inventoryUIAnimation.Play("a_Inventory_Close");
-
+                GameManager.instance.timeSlider.gameObject.SetActive(true);
                 //GameManager.instance.inventoryUI.SetActive(false);
             }
         }
@@ -197,7 +210,7 @@ public class s_Player : MonoBehaviour
                 //            _object.GetComponent<s_Interactable>().ableToInteract = false;
                 //        }
                 //}
-                    
+                GameManager.instance.timeSlider.gameObject.SetActive(false);
             }
 
             // if you want to close the notebook
@@ -207,6 +220,7 @@ public class s_Player : MonoBehaviour
                 GameManager.instance.disableMovement = false;
                 GameManager.instance.noteBook.SetActive(false);
                 m_isOpen = false;
+                GameManager.instance.timeSlider.gameObject.SetActive(true);
             }
         }
        
