@@ -57,18 +57,18 @@ public class s_Player : MonoBehaviour
     private void Update()
     {
         // to give alternative exit for UI
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (m_notebookOpen)
-            {
-                NotebookHandler();
-            }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    if (m_notebookOpen)
+        //    {
+        //        NotebookHandler();
+        //    }
 
-            else if (m_inventoryUIOpen)
-            {
-                InventoryUIHandler();
-            }
-        }
+        //    else if (m_inventoryUIOpen)
+        //    {
+        //        InventoryUIHandler();
+        //    }
+        //}
 
         // if you want to open the notebook
         if (Input.GetKeyDown(KeyCode.LeftControl))
