@@ -7,19 +7,23 @@ public class s_RoomWallsManager : MonoBehaviour
     public GameObject sleuth;
     public GameObject wallsInside;
     public GameObject wallsOutside;
-    public bool colliderToGoInside;
 
-    private void OnTriggerEnter(Collider theCollider)
+    private void OnTriggerStay(Collider theCollider)
     {
-        if (theCollider.name == sleuth.name && colliderToGoInside)
+        if (theCollider.name == sleuth.name)
         {
             wallsInside.SetActive(true);
             wallsOutside.SetActive(false);
         }
-        else if (theCollider.name == sleuth.name && !colliderToGoInside)
+    }
+
+    private void OnTriggerExit(Collider theCollider)
+    {
+        if (theCollider.name == sleuth.name)
         {
             wallsInside.SetActive(false);
             wallsOutside.SetActive(true);
         }
     }
+
 }
