@@ -215,7 +215,7 @@ public class s_MasterMH : MonoBehaviour
             AltPickUpItem("Polaroid Picture");
             HideObject(GameManager.instance.timeHolder.transform.GetChild(0).transform.GetChild(3).transform.GetChild(1).gameObject);
             GameManager.instance.inventory.UseItem("Kitty Kamera");
-            AddObjective("-Place the affair evidence on the  wife's nightstand at the right time");
+            AddObjective("-Place the affair evidence in the Wife's Journal");
         }
     }
 
@@ -260,7 +260,7 @@ public class s_MasterMH : MonoBehaviour
         GameManager.instance.player.AlternativeInventoryUIHandler();
         nightStand.tag = "Untagged";
         Destroy(nightStand.transform.GetChild(0).gameObject);
-        CrossOffObjective("-Place the affair evidence on the  wife's nightstand at the right time");
+        CrossOffObjective("-Place the affair evidence in the Wife's Journal");
     }
     #endregion
 }

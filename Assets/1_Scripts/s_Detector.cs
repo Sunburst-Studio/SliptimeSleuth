@@ -68,7 +68,7 @@ public class s_Detector : s_DetectionHandler
         //    m_mainCam.transform.rotation * Vector3.forward, m_mainCam.transform.rotation * Vector3.up);
 
         float elapsedTime = 0.0f;
-        float totalTime = 2.0f;
+        float totalTime = 1.25f;
 
         while(elapsedTime < totalTime && m_keepGoing)
         {
