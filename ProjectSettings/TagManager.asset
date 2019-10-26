@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MovingPlatform
   - Interactable
+  - Safe Panel
   layers:
   - Default
   - TransparentFX

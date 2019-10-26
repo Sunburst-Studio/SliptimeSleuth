@@ -59,7 +59,8 @@ public class s_Detector : s_DetectionHandler
         m_ISObj = this.transform.GetChild(1).gameObject;
         m_ISObj.GetComponent<TextMeshPro>().text = "?";
         m_ISObj.GetComponent<TextMeshPro>().color = Color.yellow;
-
+        m_ISObj.gameObject.SetActive(false);
+        m_ISObj.gameObject.SetActive(true);
         //m_mainCam = GameManager.instance.mainCamera;
 
         //m_ISObj.SetActive(true);
@@ -67,7 +68,7 @@ public class s_Detector : s_DetectionHandler
         //    m_mainCam.transform.rotation * Vector3.forward, m_mainCam.transform.rotation * Vector3.up);
 
         float elapsedTime = 0.0f;
-        float totalTime = 2.0f;
+        float totalTime = 1.25f;
 
         while(elapsedTime < totalTime && m_keepGoing)
         {
