@@ -51,7 +51,8 @@ public class GameManager : MonoBehaviour
 
     public s_MasterMH masterMH;
 
-    public GameObject audioManager;
+    [SerializeField]
+    private s_AudioManager audioManager;
 
     #region<Drag In>
     [Header("~~~DRAG IN AREA BEGIN~~~")]
@@ -133,6 +134,11 @@ public class GameManager : MonoBehaviour
     {
         // play the music
         //audioManager.GetComponent<AudioSource>().Play();
+        audioManager = s_AudioManager.instance;
+        if(audioManager == null)
+        {
+            Debug.Log("BINGBONGBINGBONG: NO AUDIO MANAGER FOUND IN SCENE");
+        }
     }
 
     #region <Save Load System>
@@ -212,6 +218,11 @@ public class GameManager : MonoBehaviour
         {
             i.m_inInventory = false;
         }
+    }
+
+    public void PlayAudio(string soundName)
+    {
+        audioManager.PlaySound(soundName);
     }
 
     private void Update()
