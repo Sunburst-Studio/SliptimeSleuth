@@ -54,6 +54,7 @@ MonoBehaviour:
     sentenceText: 
   ableToInteract: 0
   interacting: 0
+  envTrigger: 0
   m_animActive: 0
   QKey:
     m_PersistentCalls:
@@ -300,6 +301,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_text
+      value: "[E] Use Item\n \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 902019048177453203, guid: d2c29a0f45589f9469d2fa59a3b1ab0a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2c29a0f45589f9469d2fa59a3b1ab0a, type: 3}
