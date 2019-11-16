@@ -51,11 +51,14 @@ public class GameManager : MonoBehaviour
 
     public s_MasterMH masterMH;
 
-    [SerializeField]
-    private s_AudioManager audioManager;
+    
 
     #region<Drag In>
     [Header("~~~DRAG IN AREA BEGIN~~~")]
+
+    [SerializeField]
+    private s_AudioManager audioManager;
+
     // the notebook players can use to write in
     public GameObject noteBook;
 
