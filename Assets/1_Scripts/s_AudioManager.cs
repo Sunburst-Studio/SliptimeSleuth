@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class s_AudioManager : MonoBehaviour
 {
@@ -58,6 +59,9 @@ public class Sound
     // reference to an object in the game that can play this
     private AudioSource source;
 
+    // the mixer to control the overall volume
+    public AudioMixer mixer;
+
     // volume can only go 0 to 1
     [Range(0f, 1f)]
     public float volume = 0.7f;
@@ -89,5 +93,9 @@ public class Sound
         source.volume = volume;
         source.pitch = pitch;
         source.Play();
+
+        // see if this works correctly
+        Debug.Log("See if the mixer actually functions correctly");
+        source.outputAudioMixerGroup = mixer.outputAudioMixerGroup;
     }
 }
