@@ -25,6 +25,9 @@ public class s_Player : MonoBehaviour
     // if the notebook is open
     public bool m_notebookOpen;
 
+    // the hud 
+    public bool m_hudOpen = false;
+
     // if the inventory is open
     bool m_inventoryUIOpen;
 
@@ -38,6 +41,8 @@ public class s_Player : MonoBehaviour
     // the animation component of the inventory UI
     Animation inventoryUIAnimation;
 
+    Animation hudAnimation;
+
     #endregion
 
     #region<Main Functions>
@@ -46,6 +51,7 @@ public class s_Player : MonoBehaviour
         m_iManager = FindObjectOfType<s_InteractableManager>();
         m_rb = GetComponent<Rigidbody>();
         inventoryUIAnimation = GameManager.instance.inventoryUI.GetComponent<Animation>();
+        hudAnimation = GameManager.instance.questionMarkPanel.GetComponent<Animation>();
     }
 
     private void FixedUpdate()
@@ -88,6 +94,27 @@ public class s_Player : MonoBehaviour
             {
                 interactable.InteractionStart();
                 GameManager.instance.currentInteractable = m_currentInteractble.gameObject.GetComponent<s_Interactable>();
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(m_hudOpen)
+            {
+                HUDToggle();
+                GameManager.instance.HoverHelper("Question");
+            }
+
+            if(m_inventoryUIOpen)
+            {
+                InventoryUIHandler();
+                //GameManager.instance.HoverHelper("Inventory");
+            }
+
+            if(m_notebookOpen)
+            {
+                NotebookHandler();
+                GameManager.instance.HoverHelper("Notebook");
             }
         }
 
@@ -154,78 +181,106 @@ public class s_Player : MonoBehaviour
     {
         //Debug.Log(inven);
         // if you are not inside of the notebook
-        if (!m_notebookOpen)
+        if(!m_hudOpen)
         {
-            // if you are opening the inventoryUI
+            if (!m_notebookOpen)
+            {
+                // if you are opening the inventoryUI
+                if (!m_inventoryUIOpen)
+                {
+                    GameManager.instance.disableMovement = true;
+                    m_inventoryUIOpen = true;
+                    // "open" the inventory
+                    inventoryUIAnimation.Play("a_Inventory_Open");
+                    GameManager.instance.timeSlider.gameObject.SetActive(false);
+                    //GameManager.instance.inventoryUI.SetActive(true);
+                    GameManager.instance.HUD.SetActive(false);
+                }
+
+                // if you are closing the inventoryUI
+                else
+                {
+                    GameManager.instance.disableMovement = false;
+                    m_inventoryUIOpen = false;
+
+                    // "close" the inventory
+                    inventoryUIAnimation.Play("a_Inventory_Close");
+                    GameManager.instance.timeSlider.gameObject.SetActive(true);
+                    //GameManager.instance.inventoryUI.SetActive(false);
+                    GameManager.instance.HUD.SetActive(true);
+
+                    if (GameManager.instance.hudHoverBool)
+                    {
+                        GameManager.instance.HoverHelper("Inventory");
+                    }
+                }
+            }
+        }
+    }
+
+    public void HUDToggle()
+    {
+        //  GameManager.instance.HUD.gameObject.SetActive();
+        if (!m_hudOpen)
+        {
+            hudAnimation.Play("a_Inventory_Open");
+            m_hudOpen = true;
+            GameManager.instance.disableMovement = true;
+            GameManager.instance.timeSlider.gameObject.SetActive(false);
+            GameManager.instance.HUD.SetActive(false);
+        }
+
+        else if(m_hudOpen)
+        {
+            hudAnimation.Play("a_Inventory_Close");
+            m_hudOpen = false;
+            GameManager.instance.disableMovement = false;
+            GameManager.instance.timeSlider.gameObject.SetActive(true);
+            GameManager.instance.HUD.SetActive(true);
+        }
+    }
+
+    public void NotebookHandler()
+    {
+        if(!m_hudOpen)
+        {
             if (!m_inventoryUIOpen)
             {
-                GameManager.instance.disableMovement = true;
-                m_inventoryUIOpen = true;
-                // "open" the inventory
-                inventoryUIAnimation.Play("a_Inventory_Open");
-                GameManager.instance.timeSlider.gameObject.SetActive(false);
-                //GameManager.instance.inventoryUI.SetActive(true);
-            }
+                //Debug.Log("tried to open");
+                if (!m_isOpen)
+                {
+                    m_notebookOpen = true;
+                    GameManager.instance.disableMovement = true;
+                    GameManager.instance.noteBook.SetActive(true);
+                    m_isOpen = true;
 
-            // if you are closing the inventoryUI
-            else
-            {
-                GameManager.instance.disableMovement = false;
-                m_inventoryUIOpen = false;
+                    // the player input for the notebook
+                    TMP_InputField playerInput;
+                    playerInput = GameManager.instance.noteBook.transform.GetChild(0).GetComponent<TMP_InputField>();
+                    playerInput.ActivateInputField();
 
-                // "close" the inventory
-                inventoryUIAnimation.Play("a_Inventory_Close");
-                GameManager.instance.timeSlider.gameObject.SetActive(true);
-                //GameManager.instance.inventoryUI.SetActive(false);
+                    GameManager.instance.timeSlider.gameObject.SetActive(false);
+                    GameManager.instance.HUD.SetActive(false);
+                }
+
+                // if you want to close the notebook
+                else
+                {
+                    m_notebookOpen = false;
+                    GameManager.instance.disableMovement = false;
+                    GameManager.instance.noteBook.SetActive(false);
+                    m_isOpen = false;
+                    GameManager.instance.timeSlider.gameObject.SetActive(true);
+                    GameManager.instance.HUD.SetActive(true);
+
+                    if (GameManager.instance.hudHoverBool)
+                    {
+                        GameManager.instance.HoverHelper("Notebook");
+                    }
+                }
             }
         }
     }
-
-    private void NotebookHandler()
-    {
-        if(!m_inventoryUIOpen)
-        {
-            //Debug.Log("tried to open");
-            if (!m_isOpen)
-            {
-                m_notebookOpen = true;
-                GameManager.instance.disableMovement = true;
-                GameManager.instance.noteBook.SetActive(true);
-                m_isOpen = true;
-
-                // the player input for the notebook
-                TMP_InputField playerInput;
-                playerInput = GameManager.instance.noteBook.transform.GetChild(0).GetComponent<TMP_InputField>();
-                playerInput.ActivateInputField();
-                //foreach (s_TimePeriod t in timePeriods)
-                //{
-                //    foreach (Transform _object in t.timePeriodContents.transform)
-                //        if (_object.GetComponent<s_Interactable>() != null)
-                //        {
-                //            //Debug.Log(t.timePeriodContents.);
-                //            //t.timePeriodContents.GetComponentInChildren<s_Interactable>().m_animActive = false;
-                //            //t.timePeriodContents.GetComponentInChildren<s_Interactable>().ableToInteract = false;
-
-                //            _object.GetComponent<s_Interactable>().m_animActive = false;
-                //            _object.GetComponent<s_Interactable>().ableToInteract = false;
-                //        }
-                //}
-                GameManager.instance.timeSlider.gameObject.SetActive(false);
-            }
-
-            // if you want to close the notebook
-            else
-            {
-                m_notebookOpen = false;
-                GameManager.instance.disableMovement = false;
-                GameManager.instance.noteBook.SetActive(false);
-                m_isOpen = false;
-                GameManager.instance.timeSlider.gameObject.SetActive(true);
-            }
-        }
-       
-    }
-
 
     private void WalkHandler()
     {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -51,7 +52,20 @@ public class GameManager : MonoBehaviour
 
     public s_MasterMH masterMH;
 
-    
+    // HUD 
+
+    public bool hudHoverBool = false;
+
+    [Header("~~~~~~~~~~~~~HUD DRAG IN AREA~~~~~~~~~~~~~")]
+
+    [SerializeField]
+    private Button NotebookHover;
+
+    [SerializeField]
+    private Button QuestionHover;
+
+    [SerializeField]
+    private Button InventoryHover;
 
     #region<Drag In>
     [Header("~~~DRAG IN AREA BEGIN~~~")]
@@ -65,6 +79,15 @@ public class GameManager : MonoBehaviour
     // the inventoryUI the player uses
     public GameObject inventoryUI;
 
+    // the HUD
+    public GameObject HUD;
+
+    // the objective and instructions panel
+    public GameObject questionMarkPanel;
+
+    // the settings
+    public GameObject settingsPanel;
+
     // the tool tip for items
     public GameObject toolTip;
 
@@ -74,9 +97,13 @@ public class GameManager : MonoBehaviour
     // a restart point for when caught by people
     public GameObject restartPoint;
 
-    
+    // IMPORTANTBINGBONGFUNCTION
+    public void BingBong()
+    {
+        Debug.Log("bingbong");
+    }
 
-    [Header("~~~DRAG IN AREA END~~~")]
+    [Header("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")]
     #endregion
 
     // is the text active or not?
@@ -228,6 +255,76 @@ public class GameManager : MonoBehaviour
         audioManager.PlaySound(soundName);
     }
 
+
+    #region<HUD Shid>
+    public void HoverHelper(string name)
+    {
+        if(!hudHoverBool)
+        {
+            if(name == "Notebook")
+            {
+                NotebookHover.GetComponent<Image>().enabled = false;
+                NotebookHover.transform.GetChild(0).gameObject.SetActive(true);
+                hudHoverBool = true;
+            }
+
+            else if (name == "Question")
+            {
+                QuestionHover.GetComponent<Image>().enabled = false;
+                QuestionHover.transform.GetChild(0).gameObject.SetActive(true);
+                hudHoverBool = true;
+            }
+
+            else if (name == "Inventory")
+            {
+                InventoryHover.GetComponent<Image>().enabled = false;
+                InventoryHover.transform.GetChild(0).gameObject.SetActive(true);
+                hudHoverBool = true;
+            }
+
+        }
+
+        else
+        {
+            if (name == "Notebook")
+            {
+                NotebookHover.GetComponent<Image>().enabled = true;
+                NotebookHover.transform.GetChild(0).gameObject.SetActive(false);
+                hudHoverBool = false;
+            }
+
+            else if (name == "Question")
+            {
+                QuestionHover.GetComponent<Image>().enabled = true;
+                QuestionHover.transform.GetChild(0).gameObject.SetActive(false);
+                hudHoverBool = false;
+            }
+
+            else if (name == "Inventory")
+            {
+                InventoryHover.GetComponent<Image>().enabled = true;
+                InventoryHover.transform.GetChild(0).gameObject.SetActive(false);
+                hudHoverBool = false;
+            }
+        }
+    }
+
+    public void HUDToggleHelper()
+    {
+        player.HUDToggle();
+    }
+
+    public void NotebookToggleHelper()
+    {
+        player.NotebookHandler();
+    }
+
+    public void InventoryToggleHelper()
+    {
+        player.InventoryUIHandler();
+    }
+    #endregion
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.KeypadPlus))
@@ -239,5 +336,6 @@ public class GameManager : MonoBehaviour
         {
             Application.Quit();
         }
+
     }
 }

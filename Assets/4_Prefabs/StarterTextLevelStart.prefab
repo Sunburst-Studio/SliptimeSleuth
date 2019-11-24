@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8955457632359099545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3971807962316784772, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_Name
+      value: Starter Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784772, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784792, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834066, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].name
+      value: The Sleuth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[0].sentenceText
+      value: I've been informed that the documents are in a safe somwhere in that
+        second floor apartment.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[1].name
+      value: The Sleuth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[1].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[1].sentenceText
+      value: "This is a little troublesome. How do I get into their apartment from
+        here? \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[2].name
+      value: The Sleuth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[2].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[2].sentenceText
+      value: 'WASD - TO MOVE
+
+        I - Inventory
+
+        LCtrl - Writable Notebook'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: envTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6587898151285935702, guid: a90a1dc3ee283bb448b709d4433056c7,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: QKey.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: -Find a way up to the balcony
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[3].name
+      value: The Sleuth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[3].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[3].sentenceText
+      value: LEFT CLICK + DRAG the Time Slider on the bottom of the screen to time
+        travel.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[4].name
+      value: The Sleuth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[4].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dbaa6c1c1f19d2448a399ce060ab7a5,
+        type: 3}
+    - target: {fileID: 3971807962316784795, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: interactbleDialogue.Array.data[4].sentenceText
+      value: 'NOTE: I can''t travel through time if people see me.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807962316784775, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834064, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834064, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834064, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834064, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961401834064, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319051, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319049, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319049, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319049, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319049, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319049, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497552, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497566, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497566, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497566, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497566, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497566, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961302319095, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971807961857497564, guid: 180f8d273ad58af44bf6b1239cbca35f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 180f8d273ad58af44bf6b1239cbca35f, type: 3}

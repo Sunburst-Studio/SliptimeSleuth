@@ -94,6 +94,7 @@ public class s_MasterMH : MonoBehaviour
         Debug.Log(pickUpIndicator);
         Debug.Log("Starting Dialogue");
         m_dialogueHandler = FindObjectOfType<s_Dialogue>();
+        //Debug.Log(m);
         d_anim = m_dialogueHandler.gameObject.GetComponent<Animator>();
         m_dialogueHandler.sentences = GameManager.instance.currentInteractable.interactbleDialogue;
         d_anim.SetBool("TextActive", true);
@@ -146,10 +147,10 @@ public class s_MasterMH : MonoBehaviour
         }
     }
 
-    public void TeleportCamera(Transform pos)
-    {
-        Camera.main.gameObject.transform.position = pos.position;
-    }
+    //public void TeleportCamera(Transform pos)
+    //{
+    //    Camera.main.gameObject.transform.position = pos.position;
+    //}
 
     public void AddObjective(string objective)
     {
